@@ -5,7 +5,10 @@ from telethon import events, Button
 
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/start"))
 async def start(event):
-    await event.reply("Hҽყ ƚԋҽɾҽ! Mყ ɳαɱҽ ιʂ คυŕҽɭเค..♜..⚑/n-I'ɱ ԋҽɾҽ ƚσ ԋҽʅρ ყσυ ƚσ ɱαɳαɠҽ ყσυɾ ɠɾσυρʂ ƈσσʅ/nWαɳƚ ƚσ αԃԃ ɱҽ ιɳ ɠɾσυρ?/nCʅιƈƙ ԋҽɾҽ!",
+    await event.reply("Hҽყ ƚԋҽɾҽ! Mყ ɳαɱҽ ιʂ [คυŕҽɭเค..♜..⚑](https://telegra.ph/file/9abcb7f46a10c43e99c3a.jpg)"
+                      "-I'ɱ ԋҽɾҽ ƚσ ԋҽʅρ ყσυ ƚσ ɱαɳαɠҽ ყσυɾ ɠɾσυρʂ ƈσσʅ"
+                      "Wαɳƚ ƚσ αԃԃ ɱҽ ιɳ ɠɾσυρ?"
+                      "Cʅιƈƙ [ԋҽɾҽ!](http://t.me/Miss_Aurelia_bot?startgroup=true)",
                     buttons=[
                         [Button.url("Update Channel", url="https://t.me/AureliaBot_Support")],
                         [Button.inline("T&C",data="example")]
@@ -23,9 +26,9 @@ async def ex(event):
 - Watch your group, if someone is spamming your group, you can use the report feature of your Telegram Client.
 - Do not spam commands, buttons, or anything in bot PM.
 
-*NOTE:* _Terms and Conditions might change anytime_
+**NOTE:** __Terms and Conditions might change anytime__
 
-Updates Channel: @AureliaBot_Support
+**Updates Channel: @AureliaBot_Support**
 """
     await event.edit(to_show,
                     buttons=[Button.inline("Back", data="backbutt")])
@@ -33,7 +36,10 @@ Updates Channel: @AureliaBot_Support
 # callback for back button 
 @BotzHub.on(events.callbackquery.CallbackQuery(data="backbutt"))
 async def bacckk(event):
-    await event.edit("Hҽყ ƚԋҽɾҽ! Mყ ɳαɱҽ ιʂ คυŕҽɭเค..♜..⚑/n-I'ɱ ԋҽɾҽ ƚσ ԋҽʅρ ყσυ ƚσ ɱαɳαɠҽ ყσυɾ ɠɾσυρʂ ƈσσʅ/nWαɳƚ ƚσ αԃԃ ɱҽ ιɳ ɠɾσυρ?/nCʅιƈƙ ԋҽɾҽ!",
+    await event.edit("Hҽყ ƚԋҽɾҽ! Mყ ɳαɱҽ ιʂ [คυŕҽɭเค..♜..⚑](https://telegra.ph/file/9abcb7f46a10c43e99c3a.jpg)"
+                     "-I'ɱ ԋҽɾҽ ƚσ ԋҽʅρ ყσυ ƚσ ɱαɳαɠҽ ყσυɾ ɠɾσυρʂ ƈσσʅ"
+                     "Wαɳƚ ƚσ αԃԃ ɱҽ ιɳ ɠɾσυρ?"
+                     "Cʅιƈƙ [ԋҽɾҽ!](http://t.me/Miss_Aurelia_bot?startgroup=true)",
                     buttons=[
                         [Button.url("Updates Channel", url="https://t.me/AureliaBot_Support")],
                         [Button.inline("T&C",data="example")]
